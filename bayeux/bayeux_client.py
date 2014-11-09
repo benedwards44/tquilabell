@@ -10,7 +10,8 @@ from bayeux_message_sender import BayeuxMessageSender
 
 from interfaces import IMessengerService
 
-logging.basicConfig(filename='debug.log',level=logging.DEBUG)
+if bayeux_constants.ENABLE_DEBUG:
+    logging.basicConfig(filename='debug.log',level=logging.DEBUG)
 
 class BayeuxClient(object):
     zope.interface.implements(IMessengerService)
