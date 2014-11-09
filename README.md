@@ -1,5 +1,5 @@
 # tquilabell
-Application that subscribes to a Salesforce streaming API and rings a bell!
+Application that subscribes to a Salesforce Push Topic and rings a bell!
 
 ## Setup
 
